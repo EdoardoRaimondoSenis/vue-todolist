@@ -17,8 +17,7 @@ body {
 }
 
 #backrisultato {
-    width: 80rem;
-    height: 40rem;
+    width: 50rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -35,4 +34,69 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.text {
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 20px 0 0;
+    box-shadow: 2px 2px gainsboro;
+}
+
+.button {
+    width: 20%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 0 0 20px;
+    border-style: none;
+}
+
+.errore {
+    color: red;
+    margin: 10px 0;
+}
+
+.ListaNuo {
+    width: 80%;
+    padding: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.compito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    background-color: gainsboro;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.delete {
+    cursor: pointer;
+    color: white;
+    background-color: cadetblue;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 13px;
+    font-weight: bold;
+    border-style: none;
+    font-size: 15px;
+}
+
+.delete:hover {
+    background-color: transparent;
+    color: black;
+    transform: scale(1.3);
+    transition: 250ms;
+}
+
+.barrato {
+    text-decoration: line-through;
 }

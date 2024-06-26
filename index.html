@@ -9,9 +9,16 @@
     <h1 id="titolo">To Do List</h1>
     <div id="backrisultato">
         <div class="prisultato">
-            <div class="risultato"></div>
+            <input class="text" type="text" placeholder="Aggiungi alla lista una cosa da fare" v-model="ListaNuo">
+            <button class="button" @click="ListaAgg">Aggiungi</button>
+            <ul class="ListaNuo">
+                <li class="compito" v-for="compito in Lista" :key="compito">
+                    <input type="checkbox" v-model="compito.fatto">
+                    <span :class="{'barrato': compito.fatto}">{{compito.task}}</span>
+                    <button class="delete" @click="ListaDel(index)">X</button>
+                </li>
+            </ul>
         </div>
-        
     </div>
 </body>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
